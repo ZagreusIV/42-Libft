@@ -39,11 +39,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*int main()
-{
-    char str[] = "memmove can be very useful......";
-    ft_memmove(str + 20, str + 15, 11);
-    printf("Result: %s\n", str);
-    return 0;
-}*/
