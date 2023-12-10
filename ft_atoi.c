@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
 int	ft_atoi(const char *str)
@@ -36,22 +35,3 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * result);
 }
-
-/*int main() {
-    const char *str = "12345";
-    int result = atoi(str);
-    printf("\n%d", result);
-
-    str = "   -2342521";
-    result = atoi(str);
-    printf("\n%d", result);
-
-    str = " 7765";
-    result = atoi(str);
-    printf("\n%d", result);
-
-    str = "++==+7765";
-    result = atoi(str);
-    printf("\n%d", result);
-    return 0;
-}*/
