@@ -11,11 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>  
-
-/*char add_index(unsigned int index, char c) {
-    return c + index;
-}*/
 
 size_t	ft_strlen(const char *str)
 {
@@ -48,14 +43,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-
-/*int main() {
-    const char *input = "hello";
-    char *output = ft_strmapi(input, add_index);
-
-    printf("Original string: %s\n", input);
-    printf("Mapped string: %s\n", output);
-
-    free(output);
-    return 0;
-}*/
