@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <limits.h>
-#include <stdio.h>
 
 char	*negative(long n, int d0)
 {
@@ -74,7 +72,3 @@ char	*ft_itoa(int n)
 		return (negative(n, digit_count));
 	return (NULL);
 }
-/*int main()
-{
-    printf("%s", ft_itoa(-2147483648));
-}*/
