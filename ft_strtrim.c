@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 size_t	ft_strlen(const char *str)
 {
@@ -65,13 +64,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[i] = '\0';
 	return (str);
 }
-
-/*int main() {
-    char *str = "   This is a sample string with white spaces.    ";
-    printf("Original string: '%s'\n", str);
-
-    char *result = ft_strtrim(str, " ");
-    printf("Trimmed string: '%s'\n", result);
-
-    return 0;
-}*/
