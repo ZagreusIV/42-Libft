@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
 char	*ft_substr(const char *str, size_t start, size_t len)
@@ -38,20 +37,3 @@ char	*ft_substr(const char *str, size_t start, size_t len)
 	sub[len] = '\0';
 	return (sub);
 }
-
-/*int main() {
-    const char *str = "This is a sample string";
-    size_t start = 5;
-    size_t len = 7;
-
-    char *result = ft_substr(str, start, len);
-
-    if (result != NULL) {
-        printf("Substring: %s\n", result);
-        free(result);
-    } else {
-        printf("Invalid range for substring\n");
-    }
-
-    return 0;
-}*/
