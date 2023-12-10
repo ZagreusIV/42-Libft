@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
 void	*ft_memchr(const void *ptr, int value, size_t num)
@@ -28,19 +27,3 @@ void	*ft_memchr(const void *ptr, int value, size_t num)
 	}
 	return (NULL);
 }
-
-/*int main() {
-    const char str[] = "Hello, World!";
-    char *ptr;
-
-    // Using our custom myMemchr function
-    ptr = ft_memchr(str, 'W', sizeof(str));
-
-    if (ptr != NULL) {
-        printf("Found at position: %ld\n", (long int)(ptr - str));
-    } else {
-        printf("Not found\n");
-    }
-
-    return 0;
-}*/
