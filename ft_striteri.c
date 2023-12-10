@@ -27,20 +27,3 @@ void	ft_striteri(char *str, void (*f)(unsigned int, char *))
 		}
 	}
 }
-
-/*#include <stdio.h>
-
-void my_function(char *c) {
-    *c = 'X';
-}
-
-int main() {
-    char my_string[] = "Hello, World!";
-    printf("Before: %s\n", my_string);
-
-    ft_striter(my_string, my_function);
-
-    printf("After:  %s\n", my_string);
-
-    return 0;
-}*/
