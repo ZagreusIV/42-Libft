@@ -53,6 +53,5 @@ char			*ft_substr(char const *s, size_t start, size_t len);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 void			ft_striteri(char *str, void (*f)(unsigned int, char *));
-int				ft_strcmp(char *s1, char *s2);
 
 #endif

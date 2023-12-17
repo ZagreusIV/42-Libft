@@ -6,7 +6,7 @@
 /*   By: mboudhar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 23:30:25 by mboudhar          #+#    #+#             */
-/*   Updated: 2023/12/02 18:59:12 by mboudhar         ###   ########.fr       */
+/*   Updated: 2023/12/17 11:19:22 by mboudhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,14 +44,14 @@ static int	ft_count_words(char const *str, char c)
 	return (count);
 }
 
-static char	*ft_putword(char *word, char const *s, int i, int word_len)
+static char	*ft_putword(char *word, char const *s, int start, int word_len)
 {
 	int	j;
 
 	j = 0;
 	while (word_len > 0)
 	{
-		word[j] = s[i - word_len];
+		word[j] = s[start + j];
 		j++;
 		word_len--;
 	}
@@ -78,9 +78,9 @@ static char	**ft_split_words(char const *s, char c, char **s2, int num_words)
 			word_len++;
 		}
 		s2[word] = (char *)malloc(sizeof(char) * (word_len + 1));
-		if (!s2)
+		if (!s2[word])
 			return (free_array(s2, word));
-		ft_putword(s2[word], s, i, word_len);
+		ft_putword(s2[word], s, i - word_len, word_len);
 		word_len = 0;
 		word++;
 	}
