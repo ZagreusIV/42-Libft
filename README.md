@@ -1,7 +1,9 @@
-#42 Libft Project
+# 42 Libft Project
 
-##No bonus
+> [!NOTE]
+> No Bonus.
 
-###[Subject](Subject.pdf)
 
-Good luck.
+## [Subject](Subject.pdf)
+
+### Good luck.
