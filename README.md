@@ -5,5 +5,3 @@
 
 
 ## [Subject](Subject.pdf)
-
-### Good luck.
